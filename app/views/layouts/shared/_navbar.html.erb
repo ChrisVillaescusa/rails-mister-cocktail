@@ -1,8 +1,14 @@
 <div class="navbar-wagon">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <%= image_tag "logo.png" %>
+    <%= image_tag "logo.jpg" %>
   <% end %>
+
+  <!-- Button (call-to-action COCKTAILS) -->
+    <%= link_to  "Cocktails", cocktails_path, class: "btn btn-primary" %>
+      <!-- Button (call-to-action INGREDIENTS) -->
+    <%= link_to "Ingredients", ingredients_path, class: "btn btn-info" %>
+
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">

@@ -1,0 +1,14 @@
+<%= link_to "🆕 ingredient", new_ingredient_path %>
+
+<h1>Ingredients#index</h1>
+<p>Find me in app/views/ingredients/index.html.erb</p>
+
+<% @ingredients.each do |i| %>
+
+<div class="container">
+
+  <span>   <%= i.name  %></span>
+
+</div>
+<% end %>
+

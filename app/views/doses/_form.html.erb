@@ -1,0 +1,6 @@
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.association :ingredient %>
+  <%= f.input       :description %>
+
+  <%= f.submit "Send my ingredient", class: "btn btn-primary" %>
+<% end %>

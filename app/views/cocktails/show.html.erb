@@ -1,0 +1,25 @@
+<h1>Cocktails#show</h1>
+<p>Find me in app/views/cocktails/show.html.erb</p>
+
+<hr>
+
+<h1>Add a new Ingredient and Dosis</h1>
+<%= render "doses/form" %>
+
+<!-- au Submit ajouter Liste des doses.description et ingredients.name -->
+<!-- pe ou er -->
+
+<table style="width:50%">
+  <tr>
+    <th>Ingredient</th>
+    <th>dose</th>
+  </tr>
+
+  <tr>
+  <% @cocktail.doses.each do |dose| %>
+    <td><%= dose.ingredient.name %></td>
+    <td><%= dose.description %></td>
+    <% end %>
+  </tr>
+</table>
+
