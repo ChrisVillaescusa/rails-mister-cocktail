@@ -4,9 +4,10 @@
 <h1>Cocktails
 </h1>
 <p>Liste des mes cocktails</p>
-  <% @cocktails.each do |t| %>
+  <% @cocktails.each do |cocktail| %>
 
     <div class="card">
-      <%= t.name %>
+      <%= cocktail.name %>
+      <%= link_to "Show", cocktail_path(cocktail) %>
     </div>
   <% end %>
